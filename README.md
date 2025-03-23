@@ -1,6 +1,6 @@
 # 🚨 React-Node.js SQL Injection Demo 🚨
 
-![image](https://github.com/nadunchanna98/SQL-Injection-React-Nodejs-Demo/assets/108536998/d0e8c3ce-5c98-4d6f-841f-41097cbe1e05)
+![Demonstration image](image.png)
 
 
 This repository demonstrates a SQL injection vulnerability in a React-Node.js application.

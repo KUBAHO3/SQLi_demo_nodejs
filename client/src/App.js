@@ -34,6 +34,18 @@ const App = () => {
       backgroundColor: '#222',
       color: '#ffff',
     },
+    card: {
+      margin: 'auto',
+      paddingTop: '20px',
+      paddingLeft: '40px',
+      paddingRight: '40px',
+      paddingBottom: '20px',
+      backgroundColor: '#333',
+      // color: '#fff',
+      width: 'fit-content',
+      borderRadius: '5px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
+    },
     userDetails: {
       marginTop: '20px',
       width: '100%',
@@ -74,7 +86,8 @@ const App = () => {
       justifyContent: 'center',
     },
     button: {
-      backgroundColor: '#4CAF50',
+      backgroundColor: '#2E86C1',
+      hover: {backgroundColor: '#2471A3',},
       color: 'white',
       padding: '10px',
       cursor: 'pointer',
@@ -100,7 +113,7 @@ const App = () => {
       color: '#fff',
     },
     th: {
-      background: '#4CAF50',
+      background: '#2E86C1',
       color: 'white',
       padding: '12px',
       textAlign: 'left',
@@ -120,6 +133,8 @@ const App = () => {
 
   return (
     <div style={darkTheme.container}>
+    <div style={darkTheme.card}>
+
       <h1 style={darkTheme.header}>SQL INJECTION - LAB</h1>
       <h2 style={darkTheme.header}>Login</h2>
       <div style={darkTheme.inputContainer}>
@@ -129,7 +144,7 @@ const App = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           style={darkTheme.input}
-        />
+          />
       </div>
       <div style={darkTheme.inputContainer}>
         <label style={darkTheme.label}>Password:</label>
@@ -138,7 +153,7 @@ const App = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           style={darkTheme.input}
-        />
+          />
       </div>
       <div style={darkTheme.buttonContainer}>
         <button style={darkTheme.button} onClick={handleCheck}>
@@ -150,6 +165,7 @@ const App = () => {
           <p style={darkTheme.error}>{error}</p>
         </div>
       )}
+      </div>
       {userDetails && (
         <div style={darkTheme.userDetails}>
           <h2>User Details</h2>
@@ -289,7 +305,7 @@ export default App;
 //       justifyContent: 'center',
 //     },
 //     button: {
-//       backgroundColor: '#4CAF50',
+//       backgroundColor: '#2E86C1',
 //       color: 'white',
 //       padding: '10px',
 //       cursor: 'pointer',
@@ -315,7 +331,7 @@ export default App;
 //       color: '#fff',
 //     },
 //     th: {
-//       background: '#4CAF50',
+//       background: '#2E86C1',
 //       color: 'white',
 //       padding: '12px',
 //       textAlign: 'left',
